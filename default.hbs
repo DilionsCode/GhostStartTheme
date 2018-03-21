@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{! Document Settings }}
+  <meta charset="utf-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+  {{! Styles'n'Scripts }}
+  <link rel="stylesheet" href="{{asset "src/styles/nav.css"}}" />
+  <link rel="stylesheet" href="{{asset "src/styles/start.css"}}" />
+  <link rel="stylesheet" href="{{asset "components/normalize-css/normalize.css"}}" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
+
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+  {{navigation}}
+
+  <div class="wrapper">
+    {{! The big featured header on the homepage, with the site logo and description }}
+    <header class="jumbotron header" {{#if @blog.cover_image}}style="background-image: url({{@blog.cover_image}})"{{/if}}>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center visible-xs visible-sm">
+            <h1>Kiddos Koral</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      {{! Everything else gets inserted here }}
+      {{{body}}}
+    </div>
+  </div> <!-- .wrapper -->
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="col-xs-12">
+        <p>
+          All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} • All rights reserved.
+        </p>
+        <p>
+          Created by <a href="http://dilionsmith.me">Dilion Smith</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  {{! Ghost outputs important scripts and data with this tag }}
+  {{ghost_foot}}
+
+  {{! The main JavaScript file for Starter }}
+</body>
+</html>

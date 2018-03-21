@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+html,
+body {
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+
+.header {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 14em;
+}
+
+.header h1 {
+  display: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -15em;
+  padding-bottom: 15em;
+}
+
+.main-footer {
+  border-top: 1px solid #333;
+  height: 6em;
+  padding: 1em 0;
+  margin-top: 7em;
+}
+
+.post-footer {
+  border-top: 1px solid #333;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+.post-author .post-author-image {
+  max-height: 100px;
+  border-radius: 50%;
+}
+
+.post-content img {
+  width: 100%;
+}
+
+.post-share a:hover {
+  text-decoration: none;
+}
+
+.post-share a {
+  color: #888;
+}
+
+.post-title {
+  color: #000;
+}
+a.post-title:hover {
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-image: none !important;
+    height: 8em;
+  }
+  .header h1 {
+    display: inherit;
+  }
+}

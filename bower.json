@@ -1,0 +1,9 @@
+{
+  "name": "Starter.ghost",
+  "version": "0.2.0",
+  "dependencies": {
+    "bootstrap": "3.3",
+    "normalize-css": "*",
+    "font-awesome": "*"
+  }
+}
