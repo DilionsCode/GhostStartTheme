@@ -1,3 +1,5 @@
+![alt text](https://github.com/DilionsCode/GhostStartTheme/blob/master/download.png "What it looks like!")
+
 ##  Starter.ghost
 Twitter Bootstrap 3 theme for Ghost.js.
 
