@@ -24,14 +24,12 @@ body {
 }
 
 .main-footer {
-  border-top: 1px solid #333;
-  height: 6em;
-  padding: 1em 0;
-  margin-top: 7em;
+  height: 8em;
+  padding-top: 3em;
+  padding-bottom: 8em;
 }
 
 .post-footer {
-  border-top: 1px solid #333;
   margin-top: 2em;
   padding-top: 1em;
 }
@@ -56,7 +54,12 @@ body {
 .post-title {
   color: #000;
 }
+
 a.post-title:hover {
+  color: #000;
+}
+
+time {
   color: #000;
 }
 
