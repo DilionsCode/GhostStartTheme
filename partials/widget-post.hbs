@@ -1,6 +1,10 @@
-{{#get "posts" limit="4" filter="featured:true"}}
-  <div class="col-md-6">
-    <img src="{{featured_img}}" alt="{{title}}">
-    <p>{{title}}</p>
-  </div>
-{{/get}}
+<div class="post-widget col-xs-12">
+  <h4 class="text-center">Recent Post</h4>
+  {{#get "posts" limit="4"}}
+  {{#foreach posts}}
+  <a href="{{url}}">
+    <p style="font-size: 14px;">{{title}}</p>
+  </a>
+  {{/foreach}}
+  {{/get}}
+</div>
