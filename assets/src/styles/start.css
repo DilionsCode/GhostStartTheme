@@ -72,3 +72,17 @@ time {
     display: inherit;
   }
 }
+
+.social-widget {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+a.social-link {
+  color: #000;
+}
+
+a.social-link:hover,
+a.social-link:active {
+  color: #333;
+}

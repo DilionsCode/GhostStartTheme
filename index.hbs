@@ -34,13 +34,8 @@ the {body} of the default.hbs template, which contains our header/footer. }}
       <header>
         <h4>Subscribe to {{@blog.title}}</h4>
       </header>
-      {{subscribe_form
-        form_class="gh-signin"
-        input_class="form-control"
-        button_class="btn btn-blue btn-block"
-        placeholder="Your email address"
-        autofocus="true"
-      }}
+      <!-- Widgets Add and Remove Theme UwU -->
+      {{> widget-subscribe}}
       {{> widget-social}}
     </div>
   </div>
