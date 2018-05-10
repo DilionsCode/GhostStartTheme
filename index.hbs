@@ -5,7 +5,7 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 
 {{! The main content area on the homepage }}
 <section role="main">
-  <div class="col-xs-8">
+  <div class="col-xs-12 col-md-8">
     {{#foreach posts}} {{! Each post will be output using this markup }}
     <article class="{{post_class}} row">
       <div class="col-sm-12">
@@ -29,14 +29,13 @@ the {body} of the default.hbs template, which contains our header/footer. }}
       </div>
     </div>
   </div>
-  <div class="col-xs-3 col-xs-offset-1">
-    <div class="sidebar row">
-      <header>
+  <div class="col-xs-12 col-md-3 col-md-offset-1">
+    <div class="sidebar ">
         <h4>Subscribe to {{@blog.title}}</h4>
-      </header>
       <!-- Widgets Add and Remove Theme UwU -->
       {{> widget-subscribe}}
       {{> widget-social}}
+      {{> widget-post}}
     </div>
   </div>
 </section>
