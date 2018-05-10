@@ -1,6 +1,6 @@
 # GhostStarter
 Simple easy <a href="https://ghost.org">Ghost</a> theme.
-<img src="https://github.com/DilionsCode/GhostStartTheme/raw/master/download.png" />
+<img src="https://github.com/DilionsCode/GhostStartTheme/raw/master/demo.png" />
 ## Built with
 - Bootstrap 3
 - Font Awesome
