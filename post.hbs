@@ -13,7 +13,7 @@
           </h3>
         </div>
         <div class="col-sm-8">
-          <section class="post-content">
+          <section class="post-full-content">
             <h3 class="post-title">{{{title}}}</h3>
             {{content}}
           </section>
@@ -43,12 +43,12 @@
             <section class="post-author">
               <div class="row">
                 <div class="col-sm-3 col-md-2">
-                  <h4 class="visible-xs">{{author.name}}</h4>
-                  <img src="{{author.profile_image}}" class="post-author-image" alt="">
+                  <h4 class="visible-xs">{{primary_author.name}}</h4>
+                  <img src="{{primary_author.profile_image}}" class="post-author-image" alt="">
                 </div>
                 <div class="col-sm-9 col-md-10">
-                  <h4 class="hidden-xs">{{author.name}}</h4>
-                  <p>{{author.bio}}</p>
+                  <h4 class="hidden-xs">{{primary_author.name}}</h4>
+                  <p>{{primary_author.bio}}</p>
                 </div>
               </div>
             </section>
