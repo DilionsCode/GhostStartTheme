@@ -1,22 +1,26 @@
 {
-  "name": "starterghost",
-  "version": "0.2.0",
-  "description": "Bootstrap 3 theme for Ghost",
-  "author": {
-    "name": "Dilion Smith",
-    "email": "dilionscode@gmail.com",
-    "url": "https://dilionsmith.me"
-  },
-  "keywords": {
-    "ghost-theme"
-  },
-  "homepage": "https://github.com/DilionsCode/GhostStartTheme",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DilionsCode/GhostStartTheme.git"
-  },
-  "devDependencies": {
+    "name": "starterghost",
+    "description": "Bootstrap 3 theme for Ghost",
+    "version": "0.2.0",
+    "engines": {
+        "ghost": ">=1.2.0"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "Dilion Smith",
+      "email": "dilionscode@gmail.com",
+      "url": "https://dilionsmith.me"
+    },
+    "keywords": [
+        "ghost-theme",
+        "ghost",
+        "theme"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/DilionsCode/GhostStartTheme.git"
+    },
+    "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.7.2",
     "grunt-contrib-uglify": "~0.2.7",
