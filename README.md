@@ -14,3 +14,10 @@ Simple easy <a href="https://ghost.org">Ghost</a> theme.
 <a href="https://www.buymeacoffee.com/wBqmQ1egH">Buy me a cup of coffee</a> or <a href="https://dilionsmith.me">Hire Me</a>
 <br />
 <img src="https://github.com/DilionsCode/GhostStartTheme/raw/master/demo.png" />
+
+
+## Goals
+- Design & colors
+- Post images
+- Sidebar update
+- Responsive for all devices
