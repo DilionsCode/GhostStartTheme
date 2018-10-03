@@ -1,23 +1,5 @@
-<nav class="pagination" role="navigation">
-  <ul class="pagination">
-    {{#if prev}}
-    <li>
-      <a href="{{page_url prev}}" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    {{/if}}
-    <li>
-      <a href="{{page_url next}}" aria-label="Previous">
-        Page {{page}} of {{pages}}
-      </a>
-    </li>
-    {{#if next}}
-    <li>
-      <a href="{{page_url next}}" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-    {{/if}}
-  </ul>
-</nav>
+<div class="btn-group mr-2" role="group" aria-label="Second group" style="padding-top:60px;">
+  <a style="border: 1px solid white;border-radius: 4px;" href="{{page_url prev}}" type="button" class="btn btn-secondary" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+  <a type="button" class="btn btn-secondary">Page {{page}} of {{pages}}</a>
+  <a style="border: 1px solid white;border-radius: 4px;" href="{{page_url next}}" type="button" class="btn btn-secondary" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+</div>
