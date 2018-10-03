@@ -66,11 +66,7 @@ time {
 
 @media screen and (max-width: 768px) {
   .header {
-    background-image: none !important;
     height: 8em;
-  }
-  .header h1 {
-    display: inherit;
   }
   .main-footer {
     text-align: center;
