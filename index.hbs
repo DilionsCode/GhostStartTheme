@@ -10,14 +10,14 @@ the {body} of the default.hbs template, which contains our header/footer. }}
     <article class="{{post_class}} row">
       <div class="col-sm-12">
         <h3 class="post-title">
-          <a class="post-title" href="{{url}}">{{{title}}}</a>
+          <a class="post-title" href="{{url}}">{{title}}</a>
         </h3>
-        <b>Posted: <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></b>
+        <a href="{{url}}"><img class="img-responsive" src="{{feature_image}}" alt="{{title}}"></a>
         <section>
           <p>{{excerpt}}</p>
         </section>
-        <p class="text-muted">
-          {{tags prefix="Tags: "}}
+        <p class="text-muted">Published on <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+          {{tags prefix="Tagged: "}}
         </p>
       </div>
     </article>
@@ -31,7 +31,6 @@ the {body} of the default.hbs template, which contains our header/footer. }}
   </div>
   <div class="col-xs-12 col-md-3 col-md-offset-1">
     <div class="sidebar ">
-        <h4>Subscribe to {{@blog.title}}</h4>
       <!-- Widgets Add and Remove Theme UwU -->
       {{> widget-subscribe}}
       {{> widget-social}}
