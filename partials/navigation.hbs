@@ -1,22 +1,25 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand visible-xs visible-sm" href="/">{{@blog.title}}</a>
-    </div>
+    <a class="navbar-brand" href="#">Ghost</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
         {{#foreach navigation}}
-        <li class="{{#if current}}active{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        <li class="nav-item {{#if current}}active{{/if}}">
+          <a class="nav-link" href="{{url absolute="true"}}">{{label}}</a>
+        </li>
         {{/foreach}}
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+      <!-- Search Website -->
+      <form class="form-inline my-2 my-lg-0">
+        <input type="text" class="form-control" placeholder="Search post" aria-label="Search post" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-info" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+  </div>
 </nav>
