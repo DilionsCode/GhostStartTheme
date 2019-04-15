@@ -1,0 +1,18 @@
+/********************
+1. Navigation
+
+2. Header
+
+3. Body & Text
+
+4. Post
+
+5. Page
+
+6 . Mobile
+**********************/
+
+/* Navigation */
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+}
