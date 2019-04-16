@@ -1,0 +1,9 @@
+{{#is "page, index"}}
+<div class="header container-fluid" style="background: url('{{@blog.cover_image}}');">
+  <h1 class="header-title">{{@blog.title}}</h1>
+</div>
+{{else}}
+<div class="header-post container-fluid" style="background: url('{{@post.cover_image}}');">
+  <h1 class="header-title">{{@post.title}}</h1>
+</div>
+{{/is}}
