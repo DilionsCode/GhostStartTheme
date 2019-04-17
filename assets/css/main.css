@@ -18,9 +18,33 @@
 }
 
 /* Header */
+.header,
+.header-page {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative !important;
+}
 .header {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 450px;
   height: 40vh;
 }
+.header-page {
+  min-height: 300px;
+  height: 40vh;
+}
+h1.header-title {
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    background-color: #10101066;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+/* Body & Text */
+
+/* Post */
