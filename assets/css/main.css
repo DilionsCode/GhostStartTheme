@@ -47,4 +47,12 @@ h1.header-title {
 
 /* Body & Text */
 
+
 /* Post */
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+  h1.header-title {
+    position: inherit;
+  }
+}
