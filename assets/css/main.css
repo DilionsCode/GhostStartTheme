@@ -26,12 +26,12 @@
   position: relative !important;
 }
 .header {
-  min-height: 450px;
-  height: 40vh;
+  min-height: 350px;
+  height: 30vh;
 }
 .header-page {
   min-height: 300px;
-  height: 40vh;
+  height: 30vh;
 }
 h1.header-title {
     margin: 0;
@@ -43,6 +43,10 @@ h1.header-title {
     background-color: #10101066;
     padding: 0px 10px;
     border-radius: 10px;
+}
+.header small {
+  text-align: center;
+  font-size: 50% !important;
 }
 
 /* Body & Text */
