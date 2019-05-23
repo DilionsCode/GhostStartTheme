@@ -1,0 +1,15 @@
+<div class="col-md-8 offset-md-2 d-flex justify-content-center section">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    {{#foreach posts}}
+      <div class="carousel-item {{#if @first}}active{{/if}}">
+        <img class="d-block w-100" src="{{feature_image}}" alt="{{title}}">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>{{title}}</h5>
+          <p>{{excerpt}}</p>
+        </div>
+      </div>
+    {{/foreach}}
+  </div>
+</div>
+</div>
