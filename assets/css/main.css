@@ -34,15 +34,15 @@
   height: 30vh;
 }
 h1.header-title {
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    color: white;
-    background-color: #10101066;
-    padding: 0px 10px;
-    border-radius: 10px;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+  background-color: #10101066;
+  padding: 0px 10px;
+  border-radius: 10px;
 }
 .header small {
   text-align: center;
@@ -52,9 +52,34 @@ h1.header-title {
 /* Body & Text */
 .section {
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
-
+.featured-post {
+  position: relative;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
+  height: 300px;
+  background-position: center center !important;
+  background-size: 100% !important;
+  box-shadow: 0px 8px 10px 6px #adb5bd;
+  transition-duration: 0.7s;
+}
+.featured-post:hover {
+  background-size: 105% !important;
+  cursor: pointer;
+  box-shadow: 0px 8px 10px 10px #adb5bd;
+}
+.featured-post h1 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4em;
+  color: #FFF;
+  background-color: #0000008f;
+  border-radius: 6px;
+  padding: 5px 5px;
+}
 /* Post */
 
 /* Mobile */
